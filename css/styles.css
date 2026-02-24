@@ -27,6 +27,7 @@
 --bs-warning: #f4b942;
 --bs-danger: #e63946;
 --bs-info: #4cc9f0;
+--bs-body-font-family: "Inter", "Montserrat", sans-serif;
 }
 
 *,
