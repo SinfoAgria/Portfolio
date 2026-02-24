@@ -11,7 +11,11 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-body-bg: #0f1115;
+background: linear-gradient(
+  135deg,
+  #0f1115 0%,
+  #171a20 40%,
+  #1c1f26 100%);
 --bs-dark: #0b0d10;
 --bs-gray-900: #111318;
 --bs-gray-800: #171a20;
