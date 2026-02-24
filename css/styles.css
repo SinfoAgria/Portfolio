@@ -11,13 +11,19 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-primary: #171a20;
-  --bs-link-color: #9ca3af;
-  --bs-link-hover-color: #ffffff;
+  --bs-primary: #3a86ff;
+  --bs-primary-rgb: 58, 134, 255;
+  --bs-link-color: #3a86ff;
+  --bs-link-hover-color: #6ea8ff;
   --bs-body-font-family: "Inter", "Montserrat", sans-serif;
 }
 
-/* ===== BODY GENERAL ===== */
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -26,9 +32,9 @@ body {
   color: #e6e6e6;
 }
 
-/* ===== HERO SECTION (REEMPLAZA EL AZUL) ===== */
+/* 🔥 ESTA ES LA PARTE IMPORTANTE 🔥 */
+/* Cambia el azul del header */
 
-header,
 .bg-primary {
   background: linear-gradient(
     135deg,
@@ -38,48 +44,24 @@ header,
   ) !important;
 }
 
-/* ===== NAVBAR ===== */
+/* Por seguridad también sobrescribimos masthead */
+.masthead {
+  background: linear-gradient(
+    135deg,
+    #0f1115 0%,
+    #171a20 40%,
+    #1c1f26 100%
+  ) !important;
+}
 
+/* Navbar también usa primary */
 .navbar {
-  background-color: #0f1115 !important;
+  background-color: #0b0d10 !important;
 }
 
-.navbar a {
-  color: #e6e6e6 !important;
-}
-
-.navbar a:hover {
-  color: #ffffff !important;
-}
-
-/* ===== SECCIÓN PORTFOLIO ===== */
-
+/* Sección Portfolio */
 section {
-  background-color: #111318 !important;
-  color: #e6e6e6;
-}
-
-/* ===== TARJETAS ===== */
-
-.card {
-  background-color: #171a20;
-  border: none;
-  transition: 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-/* ===== BOTONES ===== */
-
-.btn-primary {
-  background-color: #1f232b !important;
-  border: none;
-}
-
-.btn-primary:hover {
-  background-color: #2a2f38 !important;
+  background-color: #111318;
 }
 
 hr {
