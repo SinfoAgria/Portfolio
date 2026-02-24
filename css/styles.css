@@ -10,59 +10,7 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-:root {
-  --bs-primary: #3a86ff;
-  --bs-primary-rgb: 58, 134, 255;
-  --bs-link-color: #3a86ff;
-  --bs-link-hover-color: #6ea8ff;
-  --bs-body-font-family: "Inter", "Montserrat", sans-serif;
-}
 
-/* Reset */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: var(--bs-body-font-family);
-  background-color: #0f1115;
-  color: #e6e6e6;
-}
-
-/* 🔥 ESTA ES LA PARTE IMPORTANTE 🔥 */
-/* Cambia el azul del header */
-
-.bg-primary {
-  background: linear-gradient(
-    135deg,
-    #0f1115 0%,
-    #171a20 40%,
-    #1c1f26 100%
-  ) !important;
-}
-
-/* Por seguridad también sobrescribimos masthead */
-.masthead {
-  background: linear-gradient(
-    135deg,
-    #0f1115 0%,
-    #171a20 40%,
-    #1c1f26 100%
-  ) !important;
-}
-
-/* Navbar también usa primary */
-.navbar {
-  background-color: #0b0d10 !important;
-}
-
-/* Sección Portfolio */
-section {
-  background-color: #111318;
-}
 
 hr {
   margin: 1rem 0;
@@ -11003,4 +10951,58 @@ html {
 
 .copyright {
   background-color: #1a252f;
+}
+
+:root {
+  --bs-primary: #3a86ff;
+  --bs-primary-rgb: 58, 134, 255;
+  --bs-link-color: #3a86ff;
+  --bs-link-hover-color: #6ea8ff;
+  --bs-body-font-family: "Inter", "Montserrat", sans-serif;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  background-color: #0f1115;
+  color: #e6e6e6;
+}
+
+/* 🔥 ESTA ES LA PARTE IMPORTANTE 🔥 */
+/* Cambia el azul del header */
+
+.bg-primary {
+  background: linear-gradient(
+    135deg,
+    #0f1115 0%,
+    #171a20 40%,
+    #1c1f26 100%
+  ) !important;
+}
+
+/* Por seguridad también sobrescribimos masthead */
+.masthead {
+  background: linear-gradient(
+    135deg,
+    #0f1115 0%,
+    #171a20 40%,
+    #1c1f26 100%
+  ) !important;
+}
+
+/* Navbar también usa primary */
+.navbar {
+  background-color: #0b0d10 !important;
+}
+
+/* Sección Portfolio */
+section {
+  background-color: #111318;
 }
