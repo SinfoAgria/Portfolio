@@ -51,12 +51,7 @@ body {
   text-align: var(--bs-body-text-align);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background: linear-gradient(
-    135deg,
-    #1d2330 0%,
-    #3d4961 40%,
-    #273d6e 100%
-  );
+  background: linear-gradient(3deg,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
   color: #e6e6e6;
 }
 
