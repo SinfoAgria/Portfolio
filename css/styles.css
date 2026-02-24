@@ -29,16 +29,6 @@
 --bs-body-font-family: "Inter", "Montserrat", sans-serif;
 }
 
-body {
-  background: linear-gradient(
-    135deg,
-    #0f1115 0%,
-    #171a20 40%,
-    #1c1f26 100%
-  );
-  color: #e6e6e6;
-}
-
 *,
 *::before,
 *::after {
@@ -61,6 +51,13 @@ body {
   text-align: var(--bs-body-text-align);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background: linear-gradient(
+    135deg,
+    #0f1115 0%,
+    #171a20 40%,
+    #1c1f26 100%
+  );
+  color: #e6e6e6;
 }
 
 hr {
