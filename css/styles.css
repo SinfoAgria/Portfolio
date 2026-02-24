@@ -11,48 +11,75 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
---bs-dark: #0b0d10;
---bs-gray-900: #111318;
---bs-gray-800: #171a20;
---bs-gray-700: #1f232b;
---bs-body-color: #e6e6e6;
---bs-gray-400: #9ca3af;
---bs-gray-500: #7a8191;
---bs-primary: #3a86ff;
---bs-primary-rgb: 58, 134, 255;
---bs-link-color: #3a86ff;
---bs-link-hover-color: #6ea8ff;
---bs-success: #3ddc97;
---bs-warning: #f4b942;
---bs-danger: #e63946;
---bs-info: #4cc9f0;
---bs-body-font-family: "Inter", "Montserrat", sans-serif;
+  --bs-primary: #171a20;
+  --bs-link-color: #9ca3af;
+  --bs-link-hover-color: #ffffff;
+  --bs-body-font-family: "Inter", "Montserrat", sans-serif;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  :root {
-    scroll-behavior: smooth;
-  }
-}
+/* ===== BODY GENERAL ===== */
 
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
-  font-size: var(--bs-body-font-size);
-  font-weight: var(--bs-body-font-weight);
-  line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
-  text-align: var(--bs-body-text-align);
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background: linear-gradient(3deg,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  background-color: #0f1115;
   color: #e6e6e6;
+}
+
+/* ===== HERO SECTION (REEMPLAZA EL AZUL) ===== */
+
+header,
+.bg-primary {
+  background: linear-gradient(
+    135deg,
+    #0f1115 0%,
+    #171a20 40%,
+    #1c1f26 100%
+  ) !important;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+  background-color: #0f1115 !important;
+}
+
+.navbar a {
+  color: #e6e6e6 !important;
+}
+
+.navbar a:hover {
+  color: #ffffff !important;
+}
+
+/* ===== SECCIÓN PORTFOLIO ===== */
+
+section {
+  background-color: #111318 !important;
+  color: #e6e6e6;
+}
+
+/* ===== TARJETAS ===== */
+
+.card {
+  background-color: #171a20;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== BOTONES ===== */
+
+.btn-primary {
+  background-color: #1f232b !important;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #2a2f38 !important;
 }
 
 hr {
