@@ -11,11 +11,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-background: linear-gradient(
-  135deg,
-  #0f1115 0%,
-  #171a20 40%,
-  #1c1f26 100%);
 --bs-dark: #0b0d10;
 --bs-gray-900: #111318;
 --bs-gray-800: #171a20;
@@ -32,6 +27,16 @@ background: linear-gradient(
 --bs-danger: #e63946;
 --bs-info: #4cc9f0;
 --bs-body-font-family: "Inter", "Montserrat", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    135deg,
+    #0f1115 0%,
+    #171a20 40%,
+    #1c1f26 100%
+  );
+  color: #e6e6e6;
 }
 
 *,
