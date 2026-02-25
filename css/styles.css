@@ -10887,7 +10887,7 @@ html {
   font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
-  width: 320px;   /* cambia este valor */
+  width: 380px;   /* cambia este valor */
   height: auto;
 }
 
@@ -10972,7 +10972,7 @@ html {
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
-  background-color: #0f1115;
+  background-color: #23182F;
   color: #e6e6e6;
 }
 
@@ -10980,12 +10980,7 @@ body {
 /* Cambia el azul del header */
 
 .bg-primary {
-  background: linear-gradient(
-    135deg,
-    #0f1115 0%,
-    #171a20 40%,
-    #1c1f26 100%
-  ) !important;
+  background-color: #23182F !important;
 }
 
 /* Por seguridad también sobrescribimos masthead */
@@ -10995,10 +10990,15 @@ body {
 
 /* Navbar también usa primary */
 .navbar {
-  background-color: #0b0d10 !important;
+  background-color: #23182F !important;
 }
 
 /* Sección Portfolio */
 section {
   background-color: #111318;
+}
+
+footer {
+  background-color: #23182F !important;
+  color: #e6e6e6;
 }
