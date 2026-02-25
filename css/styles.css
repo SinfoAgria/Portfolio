@@ -10989,7 +10989,7 @@ body {
 
 /* Por seguridad también sobrescribimos masthead */
 .masthead {
-  background: linear-gradient(179deg,rgba(222, 175, 195, 1) 0%, rgba(104, 82, 177, 1) 70%, rgba(47, 36, 85, 1) 100%);
+  background: linear-gradient(179deg,rgba(222, 175, 195, 1) 0%, rgba(104, 82, 177, 1) 70%, rgba(47, 36, 85, 1) 100%)!important;
 }
 
 /* Navbar también usa primary */
