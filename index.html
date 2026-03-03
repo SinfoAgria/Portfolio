@@ -52,6 +52,33 @@
                 <p class="masthead-subheading font-weight-light mb-0">Digital Entertainment Design Engineer</p>
             </div>
         </header>
+
+  <div class="dogs-divider">
+    <div class="dogs-track">
+      <img src="assets/img/Perrito01.png" alt="">
+      <img src="assets/img/Perrito02.png" alt="">
+      <img src="assets/img/Perrito03.png" alt="">
+      <img src="assets/img/Perrito04.png" alt="">
+      <img src="assets/img/Perrito05.png" alt="">
+      <img src="assets/img/Perrito06.png" alt="">
+      <img src="assets/img/Perrito07.png" alt="">
+      <img src="assets/img/Perrito08.png" alt="">
+      <img src="assets/img/Perrito09.png" alt="">
+      <img src="assets/img/Perrito10.png" alt="">
+      <!-- Repite los mismos para efecto infinito -->
+      <img src="assets/img/Perrito01.png" alt="">
+      <img src="assets/img/Perrito02.png" alt="">
+      <img src="assets/img/Perrito03.png" alt="">
+      <img src="assets/img/Perrito04.png" alt="">
+      <img src="assets/img/Perrito05.png" alt="">
+      <img src="assets/img/Perrito06.png" alt="">
+      <img src="assets/img/Perrito07.png" alt="">
+      <img src="assets/img/Perrito08.png" alt="">
+      <img src="assets/img/Perrito09.png" alt="">
+      <img src="assets/img/Perrito10.png" alt="">
+    </div>
+  </div>
+
         <!-- Portfolio Section-->
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
@@ -188,15 +215,7 @@
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
                     </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                        <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
-                        </p>
-                    </div>
+
                 </div>
             </div>
         </footer>
@@ -403,5 +422,15 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        <script>
+  const dogsTrack = document.querySelector(".dogs-track");
+
+  window.addEventListener("scroll", () => {
+    const moveAmount = window.scrollY * 0.3;
+    dogsTrack.style.transform = `translateX(-${moveAmount}px)`;
+  });
+</script>
+
     </body>
 </html>

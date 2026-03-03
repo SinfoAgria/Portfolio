@@ -10986,6 +10986,11 @@ body {
 /* Por seguridad también sobrescribimos masthead */
 .masthead {
   background: linear-gradient(179deg,rgba(242, 157, 196, 1) 0%, rgba(104, 82, 177, 1) 70%, rgba(47, 36, 85, 1) 100%)!important;
+  margin-bottom: 0
+}
+
+#portfolio {
+  margin-top: 0;
 }
 
 /* Navbar también usa primary */
@@ -11002,3 +11007,32 @@ footer {
   background-color: #23182F !important;
   color: #e6e6e6;
 }
+
+/* ===== DOG SCROLL SECTION ===== */
+
+.dogs-section {
+  height: 180vh;
+}
+
+.dogs-divider {
+  height: 140px; /* solo lo que mide la fila */
+  overflow: hidden;
+  position: relative;
+  background: #111318;
+  display: flex;
+  align-items: center;
+}
+
+.dogs-track {
+  display: flex;
+  gap: 60px;
+  width: max-content;
+  transition: transform 0.1s linear;
+}
+
+.dogs-track img {
+  height: 120px;
+  flex-shrink: 0;
+}
+
+
