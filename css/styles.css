@@ -11096,4 +11096,15 @@ footer {
   color: #cfcfe6;
 }
 
+.project-title {
+  line-height: 1.7;
+  color: #cfcfe6;
+}
 
+#portfolio {
+  padding-bottom: 2rem;
+}
+
+#projects {
+  padding-top: 2rem;
+}
