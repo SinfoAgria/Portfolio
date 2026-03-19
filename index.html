@@ -6,6 +6,12 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Portfolio - Stefania Espinal</title>
+
+
+        <script src="https://cdn.babylonjs.com/babylon.js"></script>
+        <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+        
+
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -28,6 +34,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#projects">Projects</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Experience</a></li>
                     </ul>
@@ -175,10 +182,16 @@
                     </div>
                 </div>
             </div>
+
+ <div id="canvas-container">
+    <canvas id="my-canvas" width="500" height="300" />
+  </div>
+
         </section>
+
 <!-- Proyects Section Heading-->
         <section class="projects-section" id="projects">
-  <div class="container">
+  <div class="container-fluid px-5">
      <!-- Portfolio Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Projects</h2>
                 <!-- Icon Divider-->
@@ -191,19 +204,23 @@
     <div class="row g-5">
 
       <!-- PROYECTO 1 -->
-      <div class="col-lg-6">
+      <div class="col-12 col-lg-6">
         <div class="project-card">
 
           <h3 class="project-title">Froggo Jump!</h3>
 
           <!-- Imagen principal -->
-          <img src="assets/img/portfolio/RENDERTODAS02.png" class="project-main-img" alt="Froggo Jump">
+          <img src="assets/img/portfolio/RENDERTODAS02.png" class="project-main-img gallery-img" alt="Froggo Jump" data-img="assets/img/portfolio/RENDERTODAS02.png">
 
           <!-- Miniaturas -->
           <div class="project-thumbs">
-            <img src="assets/img/frog-1.png">
-            <img src="assets/img/frog-2.png">
-            <img src="assets/img/frog-3.png">
+            
+                <img src="assets/img/portfolio/FloresUV.png" class="gallery-img" data-img="assets/img/portfolio/FloresUV.png">
+            
+                <img src="assets/img/portfolio/Tono.png" class="gallery-img" data-img="assets/img/portfolio/Tono.png">
+            
+                <img src="assets/img/portfolio/TonoUV.png" class="gallery-img" data-img="assets/img/portfolio/TonoUV.png">
+            
           </div>
 
           <!-- Texto -->
@@ -223,17 +240,17 @@
       </div>
 
       <!-- PROYECTO 2 -->
-      <div class="col-lg-6">
+      <div class="col-12 col-lg-6">
         <div class="project-card">
 
           <h3 class="project-title">Talkie Camp</h3>
 
-          <img src="assets/img/camp-main.png" class="project-main-img" alt="Talkie Camp">
+          <img src="assets/img/portfolio/Camp02.png" class="project-main-img gallery-img" alt="Talkie Camp" data-img="assets/img/portfolio/Camp02.png">
 
           <div class="project-thumbs">
-            <img src="assets/img/camp-1.png">
-            <img src="assets/img/camp-2.png">
-            <img src="assets/img/camp-3.png">
+            <img src="assets/img/portfolio/CampUV02.png" class="gallery-img" data-img="assets/img/portfolio/CampUV02.png">
+            <img src="assets/img/portfolio/Camp01.png" class="gallery-img" data-img="assets/img/portfolio/Camp01.png">
+            <img src="assets/img/portfolio/CampUV01.png" class="gallery-img" data-img="assets/img/portfolio/CampUV01.png">
           </div>
 
           <!-- Texto -->
@@ -241,7 +258,7 @@
 Talkie Camp is a collaborative video game designed to enhance social interaction by immersing players in a shared camp-building experience. Players work together to construct, gather resources, cook, and protect their camp. The game encourages meaningful social connections, even between individuals who are physically distant.          </p>
           <p class="project-description">
             <h5 class="project-title">ROLE</h5> 
-            3D Artist – Characters & Props
+            3D Artist – Props
           </p>
           <p class="project-description">
             <h5 class="project-title">SOFTWARE</h5> 
@@ -253,6 +270,7 @@ Talkie Camp is a collaborative video game designed to enhance social interaction
 
     </div>
   </div>
+  
 </section>
         <!-- About Section-->
         <section class="page-section bg-primary text-white mb-0" id="about">
@@ -315,10 +333,8 @@ Talkie Camp is a collaborative video game designed to enhance social interaction
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/stefania-espinal-ram%C3%ADrez/"><i class="fab fa-fw fa-linkedin-in"> </i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.artstation.com/sinfonia_agridulce"><i class="fab fa-fw fa-artstation"></i></a>
                     </div>
 
                 </div>
@@ -336,7 +352,7 @@ Talkie Camp is a collaborative video game designed to enhance social interaction
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Frog Characters</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -344,13 +360,62 @@ Talkie Camp is a collaborative video game designed to enhance social interaction
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
+                                    <div class="modal-gallery">
+
+    <!-- Imagen principal -->
+    <div class="artstation-gallery">
+
+    <!-- Flecha izquierda -->
+    <div class="gallery-arrow left-arrow">&#10094;</div>
+
+    <!-- Imagen principal -->
+    <img
+         class="main-image gallery-img"
+         src="assets/img/portfolio/Sapitos06.png">
+
+    <!-- Flecha derecha -->
+    <div class="gallery-arrow right-arrow">&#10095;</div>
+
+</div>
+
+    <!-- Miniaturas -->
+    <div class="thumbnail-container">
+
+        <img src="assets/img/portfolio/Sapitos06.png" class="modal-thumb active-thumb">
+        <img src="assets/img/portfolio/SapitosUV.png" class="modal-thumb">
+        <img src="assets/img/portfolio/TonoBasicoUV.png" class="modal-thumb">
+        <img src="assets/img/portfolio/TonoAlvaroUV.png" class="modal-thumb">
+        <img src="assets/img/portfolio/TonoCapitoUV.png" class="modal-thumb">
+        <img src="assets/img/portfolio/TonoGoldiUV.png" class="modal-thumb">
+
+    </div>
+
+</div>
+
+<div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                    <p class="mb-4">Series of four frog characters with unique designs, based on concept art by Juan David. 
+    Each model was developed with a strong focus on real-time game optimization, ensuring clean topology, 
+    efficient texturing, and clear silhouettes.
+  </p>
+
+  <p class="project-text">
+    Each character maintains a distinct visual identity while staying true to the original concept, 
+    adapting it effectively into a functional 3D pipeline.
+  </p>
+
+  <p class="project-credit">
+    Concept by Juan David
+  </p>
+
+  <p class="project-software">
+    <strong>Software:</strong> Blender, Substance Painter
+  </p>
+
                                 </div>
                             </div>
                         </div>
@@ -368,7 +433,7 @@ Talkie Camp is a collaborative video game designed to enhance social interaction
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Low Poly Bunny Character</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -376,13 +441,57 @@ Talkie Camp is a collaborative video game designed to enhance social interaction
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
+                                    <div class="modal-gallery">
+
+    <!-- Imagen principal -->
+    <div class="artstation-gallery">
+
+    <!-- Flecha izquierda -->
+    <div class="gallery-arrow left-arrow">&#10094;</div>
+
+    <!-- Imagen principal -->
+    <img
+         class="main-image gallery-img"
+         src="assets/img/portfolio/DorianNew.png">
+
+    <!-- Flecha derecha -->
+    <div class="gallery-arrow right-arrow">&#10095;</div>
+
+</div>
+
+    <!-- Miniaturas -->
+    <div class="thumbnail-container">
+
+        <img src="assets/img/portfolio/DorianNew.png" class="modal-thumb active-thumb">
+        <img src="assets/img/portfolio/DorianWireNew.png" class="modal-thumb">
+        <img src="assets/img/portfolio/DorianWire02New.png" class="modal-thumb">
+
+    </div>
+
+</div>
+
+<div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                    <p class="mb-4">Low poly character featuring a human base with stylized bunny ears. The model was designed 
+    with a standard humanoid structure, making it easy to rig and animate for use in game engines.
+  </p>
+
+  <p class="project-text">
+    The focus was on maintaining a clean and efficient topology while preserving a simple and appealing 
+    stylized look.
+  </p>
+
+  <p class="project-credit">
+    Original character design
+  </p>
+
+  <p class="project-software">
+    <strong>Software:</strong> Blender (default materials)
+  </p>
                                 </div>
                             </div>
                         </div>
@@ -400,7 +509,7 @@ Talkie Camp is a collaborative video game designed to enhance social interaction
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Mr TV</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -408,13 +517,60 @@ Talkie Camp is a collaborative video game designed to enhance social interaction
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
+                                    <div class="modal-gallery">
+
+    <!-- Imagen principal -->
+    <div class="artstation-gallery">
+
+    <!-- Flecha izquierda -->
+    <div class="gallery-arrow left-arrow">&#10094;</div>
+
+    <!-- Imagen principal -->
+    <img
+         class="main-image gallery-img"
+         src="assets/img/portfolio/SRTVLOWRen.png">
+
+    <!-- Flecha derecha -->
+    <div class="gallery-arrow right-arrow">&#10095;</div>
+
+</div>
+
+    <!-- Miniaturas -->
+    <div class="thumbnail-container">
+
+        <img src="assets/img/portfolio/SRTVLOWRen.png" class="modal-thumb active-thumb">
+        <img src="assets/img/portfolio/SrTVWire.png" class="modal-thumb">
+        <img src="assets/img/portfolio/TVLOWLOW_Material_BaseMap.png" class="modal-thumb">
+        <img src="assets/img/portfolio/SrTVUV.png" class="modal-thumb">
+
+    </div>
+
+</div>
+
+</div>
+
+<div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                    "Mr. TV" is an ultra low poly character featuring a stylized human body with a television head. 
+    The design focuses on a colorful and charismatic aesthetic, making it suitable for stylized game environments.
+  </p>
+
+  <p class="project-text">
+    The model was built with a simple and efficient structure, allowing it to be easily rigged and animated 
+    for real-time applications.
+  </p>
+
+  <p class="project-credit">
+    Original character design
+  </p>
+
+  <p class="project-software">
+    <strong>Software:</strong> Blender, Krita, Substance Painter
+  </p>
                                 </div>
                             </div>
                         </div>
@@ -432,7 +588,7 @@ Talkie Camp is a collaborative video game designed to enhance social interaction
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Armored Character</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -440,13 +596,63 @@ Talkie Camp is a collaborative video game designed to enhance social interaction
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
+                                    <div class="modal-gallery">
+
+    <!-- Imagen principal -->
+    <div class="artstation-gallery">
+
+    <!-- Flecha izquierda -->
+    <div class="gallery-arrow left-arrow">&#10094;</div>
+
+    <!-- Imagen principal -->
+    <img
+         class="main-image gallery-img"
+         src="assets/img/portfolio/Pose34.png">
+
+    <!-- Flecha derecha -->
+    <div class="gallery-arrow right-arrow">&#10095;</div>
+
+</div>
+
+    <!-- Miniaturas -->
+    <div class="thumbnail-container">
+
+        <img src="assets/img/portfolio/Pose34.png" class="modal-thumb active-thumb">
+        <img src="assets/img/portfolio/PoseCuerpoEntero34.png" class="modal-thumb">
+        <img src="assets/img/portfolio/Frame 9.png" class="modal-thumb">
+        <img src="assets/img/portfolio/Frame 8.png" class="modal-thumb">
+        <img src="assets/img/portfolio/LowPoly.png" class="modal-thumb">
+        <img src="assets/img/portfolio/HighPoly.png" class="modal-thumb">
+        <img src="assets/img/portfolio/UVs.png" class="modal-thumb">
+        <img src="assets/img/portfolio/UVs02.png" class="modal-thumb">
+        <img src="assets/img/portfolio/UVs03.png" class="modal-thumb">
+
+    </div>
+
+</div>
+
+<div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                    <p class="mb-4"> Armored male character created as part of a 3D course at PolygonUs. The model was initially sculpted 
+    and later refined through retopology to achieve a clean, animation-ready topology.
+  </p>
+
+  <p class="project-text">
+    The full pipeline included UV mapping and texturing, focusing on achieving a balanced result between 
+    visual quality and real-time performance.
+  </p>
+
+  <p class="project-credit">
+    Academic project – PolygonUs
+  </p>
+
+  <p class="project-software">
+    <strong>Software:</strong> Blender, ZBrush, Substance Painter
+  </p>
                                 </div>
                             </div>
                         </div>
@@ -464,7 +670,7 @@ Talkie Camp is a collaborative video game designed to enhance social interaction
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Stylized Female Character</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -472,13 +678,59 @@ Talkie Camp is a collaborative video game designed to enhance social interaction
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
+                                    <div class="modal-gallery">
+
+    <!-- Imagen principal -->
+    <div class="artstation-gallery">
+
+    <!-- Flecha izquierda -->
+    <div class="gallery-arrow left-arrow">&#10094;</div>
+
+    <!-- Imagen principal -->
+    <img
+         class="main-image gallery-img"
+         src="assets/img/portfolio/43.png">
+
+    <!-- Flecha derecha -->
+    <div class="gallery-arrow right-arrow">&#10095;</div>
+
+</div>
+
+    <!-- Miniaturas -->
+    <div class="thumbnail-container">
+
+        <img src="assets/img/portfolio/43.png" class="modal-thumb active-thumb">
+        <img src="assets/img/portfolio/TodasPoseA.png" class="modal-thumb">
+        <img src="assets/img/portfolio/TodasPoseAWire.png" class="modal-thumb">
+        <img src="assets/img/portfolio/Armas.png" class="modal-thumb">
+        <img src="assets/img/portfolio/ArmasWire.png" class="modal-thumb">
+
+    </div>
+
+</div>
+
+<div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                    <p class="mb-4">Stylized female character featuring short hair and a retro-inspired weapon. The design explores a relaxed, 
+    confident personality, aiming for a “cool” and approachable aesthetic.
+  </p>
+
+  <p class="project-text">
+    The full process included modeling, UV mapping, texturing, and rigging for posing, ensuring the character 
+    is suitable for presentation and real-time applications.
+  </p>
+
+  <p class="project-credit">
+    Original character design
+  </p>
+
+  <p class="project-software">
+    <strong>Software:</strong> Blender, Substance Painter
+  </p>
                                 </div>
                             </div>
                         </div>
@@ -496,7 +748,7 @@ Talkie Camp is a collaborative video game designed to enhance social interaction
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Sage - Valorant</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -504,13 +756,56 @@ Talkie Camp is a collaborative video game designed to enhance social interaction
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
+                                    <div class="modal-gallery">
+
+    <!-- Imagen principal -->
+    <div class="artstation-gallery">
+
+    <!-- Flecha izquierda -->
+    <div class="gallery-arrow left-arrow">&#10094;</div>
+
+    <!-- Imagen principal -->
+    <img
+         class="main-image gallery-img"
+         src="assets/img/portfolio/SAGERENDER01.png">
+
+    <!-- Flecha derecha -->
+    <div class="gallery-arrow right-arrow">&#10095;</div>
+
+</div>
+
+    <!-- Miniaturas -->
+    <div class="thumbnail-container">
+
+        <img src="assets/img/portfolio/SAGERENDER01.png" class="modal-thumb active-thumb">
+        <img src="assets/img/portfolio/SAGERENDER04.png" class="modal-thumb">
+
+    </div>
+
+</div>
+
+<div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                    <p class="mb-4">Digital sculpture study of Sage from Valorant, focused on capturing the essence and presence of the character 
+    through pose and form.
+  </p>
+
+  <p class="project-text">
+    The composition emphasizes her iconic crystal as the only source of color and light, creating a strong visual 
+    contrast and directing attention to the character’s identity.
+  </p>
+
+  <p class="project-credit">
+    Character from Valorant – Riot Games
+  </p>
+
+  <p class="project-software">
+    <strong>Software:</strong> ZBrush
+  </p>
                                 </div>
                             </div>
                         </div>
@@ -518,6 +813,237 @@ Talkie Camp is a collaborative video game designed to enhance social interaction
                 </div>
             </div>
         </div>
+
+        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal7" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Stylized House Interior</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <div class="modal-gallery">
+
+    <!-- Imagen principal -->
+    <div class="artstation-gallery">
+
+    <!-- Flecha izquierda -->
+    <div class="gallery-arrow left-arrow">&#10094;</div>
+
+    <!-- Imagen principal -->
+    <img
+         class="main-image gallery-img"
+         src="assets/img/portfolio/CasaOreo4k.png">
+
+    <!-- Flecha derecha -->
+    <div class="gallery-arrow right-arrow">&#10095;</div>
+
+</div>
+
+    <!-- Miniaturas -->
+    <div class="thumbnail-container">
+
+        <img src="assets/img/portfolio/CasaOreo4k.png" class="modal-thumb active-thumb">
+        <img src="assets/img/portfolio/CasaOreoCositos4k.png" class="modal-thumb">
+        <img src="assets/img/portfolio/CasaWire.png" class="modal-thumb">
+
+    </div>
+
+</div>
+
+<div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Low poly house interior designed as a colorful and cozy environment. The scene represents a living room space, 
+    incorporating various decorative elements to create a warm and inviting atmosphere.
+  </p>
+
+  <p class="project-text">
+    The focus was on composition, color harmony, and simplicity, using Blender materials to achieve a stylized and 
+    cohesive look suitable for real-time applications.
+  </p>
+
+  <p class="project-credit">
+    Original environment design
+  </p>
+
+  <p class="project-software">
+    <strong>Software:</strong> Blender
+  </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" aria-labelledby="portfolioModal8" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Stylized Red-Haired Character</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <div class="modal-gallery">
+
+    <!-- Imagen principal -->
+    <div class="artstation-gallery">
+
+    <!-- Flecha izquierda -->
+    <div class="gallery-arrow left-arrow">&#10094;</div>
+
+    <!-- Imagen principal -->
+    <img
+         class="main-image gallery-img"
+         src="assets/img/portfolio/44.png">
+
+    <!-- Flecha derecha -->
+    <div class="gallery-arrow right-arrow">&#10095;</div>
+
+</div>
+
+    <!-- Miniaturas -->
+    <div class="thumbnail-container">
+
+        <img src="assets/img/portfolio/44.png" class="modal-thumb active-thumb">
+        <img src="assets/img/portfolio/NuevaWire.png" class="modal-thumb">
+
+    </div>
+
+</div>
+
+<div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Stylized character featuring red hair, bold clothing, and vibrant colors. The design focuses on a strong visual 
+    identity, using color and shape to create an eye-catching and dynamic look.
+  </p>
+
+  <p class="project-text">
+    The model was created with a clean, animation-ready topology and includes a rig for posing. The full pipeline 
+    covered modeling, UV mapping, and texturing, making it suitable for implementation in real-time game environments.
+  </p>
+
+  <p class="project-credit">
+    Original character design
+  </p>
+
+  <p class="project-software">
+    <strong>Software:</strong> Blender, Substance Painter
+  </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" aria-labelledby="portfolioModal9" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Stylized Female Character – Low Poly Version</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <div class="modal-gallery">
+
+    <!-- Imagen principal -->
+    <div class="artstation-gallery">
+
+    <!-- Flecha izquierda -->
+    <div class="gallery-arrow left-arrow">&#10094;</div>
+
+    <!-- Imagen principal -->
+    <img
+         class="main-image gallery-img"
+         src="assets/img/portfolio/PersonajaVistasLow.png">
+
+    <!-- Flecha derecha -->
+    <div class="gallery-arrow right-arrow">&#10095;</div>
+
+</div>
+
+    <!-- Miniaturas -->
+    <div class="thumbnail-container">
+
+        <img src="assets/img/portfolio/PersonajaVistasLow.png" class="modal-thumb active-thumb">
+        <img src="assets/img/portfolio/LowEllaWire.png" class="modal-thumb">
+        <img src="assets/img/portfolio/PersonajaChiquiTex02.png" class="modal-thumb">
+        <img src="assets/img/portfolio/PersonajaUV.png" class="modal-thumb">
+
+    </div>
+
+</div>
+
+<div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Low poly version of the stylized short-haired female character, created to showcase adaptability across 
+    different levels of complexity and optimization for game assets.
+  </p>
+
+  <p class="project-text">
+    The model maintains the core design and personality of the original character while simplifying geometry 
+    and textures, making it suitable for lightweight real-time applications.
+  </p>
+
+  <p class="project-credit">
+    Original character design
+  </p>
+
+  <p class="project-software">
+    <strong>Software:</strong> Blender, Substance Painter
+  </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/model-loader.js" type="module"></script>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
@@ -535,6 +1061,72 @@ Talkie Camp is a collaborative video game designed to enhance social interaction
     const moveAmount = window.scrollY * 0.3;
     dogsTrack.style.transform = `translateX(-${moveAmount}px)`;
   });
+</script>
+
+<!-- Image Zoom Viewer -->
+<div id="imageViewer" style="
+display:none;
+position:fixed;
+z-index:2000;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+justify-content:center;
+align-items:center;
+">
+
+<img id="viewerImg" style="
+max-width:90%;
+max-height:90%;
+border-radius:10px;
+">
+
+</div>
+
+
+<script>
+
+const viewer = document.getElementById("imageViewer");
+const viewerImg = document.getElementById("viewerImg");
+
+document.querySelectorAll(".gallery-img").forEach(img => {
+
+  img.addEventListener("click", () => {
+
+    viewer.style.display = "flex";
+    viewerImg.src = img.src;
+
+  });
+
+});
+
+viewer.addEventListener("click", () => {
+
+  viewer.style.display = "none";
+
+});
+
+document.querySelectorAll(".modal-thumb").forEach(thumb => {
+
+  thumb.addEventListener("click", function(){
+
+    const gallery = this.dataset.gallery;
+
+    const mainImage = document.getElementById("mainImage-" + gallery);
+
+    mainImage.src = this.src;
+
+    document.querySelectorAll(`[data-gallery="${gallery}"]`)
+    .forEach(img => img.classList.remove("active-thumb"));
+
+    this.classList.add("active-thumb");
+
+  });
+
+});
+
 </script>
 
     </body>

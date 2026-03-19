@@ -7,6 +7,7 @@
 // Scripts
 // 
 
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -50,5 +51,84 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+
+});
+
+document.querySelectorAll(".modal-gallery").forEach(gallery => {
+
+    const mainImage = gallery.querySelector(".main-image");
+    const thumbnails = gallery.querySelectorAll(".modal-thumb");
+    const leftArrow = gallery.querySelector(".left-arrow");
+    const rightArrow = gallery.querySelector(".right-arrow");
+
+    let currentIndex = 0;
+
+    function updateGallery(index){
+
+        currentIndex = index;
+
+        mainImage.src = thumbnails[currentIndex].src;
+
+        thumbnails.forEach(img => img.classList.remove("active-thumb"));
+        thumbnails[currentIndex].classList.add("active-thumb");
+
+    }
+
+    thumbnails.forEach((thumb, index) => {
+
+        thumb.addEventListener("click", () => {
+
+            updateGallery(index);
+
+        });
+
+    });
+
+    leftArrow.addEventListener("click", () => {
+
+        currentIndex--;
+
+        if(currentIndex < 0){
+            currentIndex = thumbnails.length - 1;
+        }
+
+        updateGallery(currentIndex);
+
+    });
+
+    rightArrow.addEventListener("click", () => {
+
+        currentIndex++;
+
+        if(currentIndex >= thumbnails.length){
+            currentIndex = 0;
+        }
+
+        updateGallery(currentIndex);
+
+    });
+
+});
+
+document.addEventListener("keydown", function(e){
+
+    const activeModal = document.querySelector(".portfolio-modal.show");
+
+    if(!activeModal) return;
+
+    const gallery = activeModal.querySelector(".modal-gallery");
+
+    if(!gallery) return;
+
+    const leftArrow = gallery.querySelector(".left-arrow");
+    const rightArrow = gallery.querySelector(".right-arrow");
+
+    if(e.key === "ArrowRight"){
+        rightArrow.click();
+    }
+
+    if(e.key === "ArrowLeft"){
+        leftArrow.click();
+    }
 
 });
